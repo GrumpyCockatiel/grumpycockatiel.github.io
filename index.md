@@ -5,7 +5,7 @@ nav_order: 1
 ---
 # The Software Design Process
 
-These pages are hosted in the repo [DesignAutomation.Core](https://github.com/People-Places-Solutions/DesignAutomation.Core) for now. It may move later. You can find them in the `docs` folder.
+These pages are hosted in the repo [GrumpyCockatiel/grumpycockatiel.github.io](https://grumpycockatiel.github.io) for now. It may move later.
 
 ## Introduction
 
