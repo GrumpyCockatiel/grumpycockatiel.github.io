@@ -1,7 +1,8 @@
 # Where things are
 title: Grumpy Cockatiel
-description: Core Lib for Design Automation
-remote_theme        : just-the-docs/just-the-docs
+tagline: Software NOT made in Silicon Valley                 
+#remote_theme        : just-the-docs/just-the-docs
+remote_theme        : cotes2020/jekyll-theme-chirpy
 source              : .
 destination         : ./_site
 collections_dir     : .
@@ -14,6 +15,9 @@ sass:
 collections:
   posts:
     output          : true
+
+github:
+  username: grumpycockatiel             # change to your github username
 
 # Handling Reading
 safe                : false
@@ -52,6 +56,7 @@ show_dir_listing    : false
 permalink           : date
 paginate_path       : /page:num
 timezone            : America/Chicago
+lang                : en
 
 quiet               : false
 verbose             : false
