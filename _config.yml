@@ -2,7 +2,7 @@
 title: Grumpy Cockatiel
 tagline: Software NOT made in Silicon Valley                 
 #remote_theme        : just-the-docs/just-the-docs
-remote_theme        : cotes2020/jekyll-theme-chirpy
+#remote_theme        : cotes2020/jekyll-theme-chirpy
 source              : .
 destination         : ./_site
 collections_dir     : .
