@@ -1,7 +1,6 @@
 ﻿---
 layout: home
 title: Overview
-nav_order: 1
 ---
 # The Software Design Process
 
