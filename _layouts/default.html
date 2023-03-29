@@ -12,6 +12,7 @@
         </style>
     </head>
     <body>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/page/index">MicroCMS</a>
@@ -41,15 +42,14 @@
                             {% for page in site.pages %}
                                 <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
                             {% endfor %}
-                            <li><a class="dropdown-item" href="/page/test">Test Page</a></li>
-                            <li><a class="dropdown-item" href="/page/fresheyes">Blog Entry</a></li>
-                            <li><a class="dropdown-item" href="/page/code">Code</a></li>
                         </ul>
                     </li>
                 </ul>
               </div>
             </div>
           </nav>
+
+          
         <div class="container">
             <div>{{ content }}</div>
         </div>
