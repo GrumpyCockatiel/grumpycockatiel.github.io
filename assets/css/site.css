@@ -9,17 +9,11 @@ for details on configuring this project to bundle and minify static web assets. 
     src: local('Bank Gothic Light'), url('../fonts/bank-gothic-light.woff') format('woff');
 }
 
-
 @font-face {
     font-family: 'Bank Gothic Medium';
     font-style: normal;
     font-weight: normal;
     src: local('Bank Gothic Medium'), url('../fonts/bank-gothic-medium.woff') format('woff');
-}
-
-/* override Radzen styles */
-.rz-button {
-    background-color: #0d6efd !important;
 }
 
 :root {
