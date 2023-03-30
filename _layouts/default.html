@@ -85,8 +85,8 @@
                                 Posts
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    {% for page in site.posts %}
-                                        <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
+                                    {% for post in site.posts %}
+                                        <li><a class="dropdown-item" href="{{ post.url }}">{{ post.title }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </li>
