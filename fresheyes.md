@@ -3,7 +3,8 @@
 > We know for certain, for instance, that for some reason, for some time in the beginning, there were hot lumps... Animals without backbones hid from each other, or fell down.
 *The FiresignTheatre, I Think We're ALL Bozos on This Bus*
 
-![Image](/assets/images/malkavian.jpg){.blogImage}
+![Image](/assets/images/malkavian.jpg)
+{: .blogImage }
 Once, there were little buggies, little one-celled creatures that could bump about and smell a few chemical changes in their world of organic soup. "This is all there is to be known," they declared, and went about their contented existences, absorbing and dividing, absorbing and dividing, and making a lot more of themselves.
 
 But a radical few somehow knew there was more out there than proteins and amino acid chains. They could sense it in their cilia, feel it in their flagella and know it in their nucleus. They could not prove it, but they knew there was more to be known about What Is Out There. Though most of the bacteriological community rejected this radical thesis and thought them mad, a precious few wanted to lift the veil on the rest of their universe.
