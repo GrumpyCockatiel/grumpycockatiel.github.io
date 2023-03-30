@@ -82,10 +82,10 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                TestPages
+                                Posts
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    {% for page in site.pages %}
+                                    {% for page in site.posts %}
                                         <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
                                     {% endfor %}
                                 </ul>

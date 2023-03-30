@@ -1,3 +1,8 @@
+---
+layout: post
+title: Fresh Eyes
+---
+
 ## Fresh Eyes: The Evolution Of Vision
 
 > We know for certain, for instance, that for some reason, for some time in the beginning, there were hot lumps... Animals without backbones hid from each other, or fell down.
