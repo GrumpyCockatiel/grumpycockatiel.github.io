@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Fresh Eyes
 ---
 ## Fresh Eyes: The Evolution Of Vision
