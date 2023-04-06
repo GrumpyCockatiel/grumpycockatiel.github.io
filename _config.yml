@@ -14,9 +14,9 @@ data_dir            : _data
 includes_dir        : _includes
 sass:
   sass_dir: _sass
-collections:
-  posts:
-    output          : true
+#collections:
+  #posts:
+    #output          : true
 
 github:
   username: grumpycockatiel             # change to your github username
