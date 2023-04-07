@@ -5,38 +5,42 @@ title: Test
 
 <h2>Test HTML Post Page</h2>
 
-<script type="text/javascript">
-
-// move to view model
-var signature = {
-    result: "not set",
-};
-
-function doSubmit() {
-
-    axios({
-        method: "get",
-        url: 'https://services.raydreams.com/api/v1/ping?msg=test'})
-        .then(callback);
-}
-
-// 
-function callback(resp) {
-
-    try {
-        signature = resp.data;
-        var ctrl = document.getElementById('sigField');
-        ctrl.innerHTML = resp.data.result;
-        //alert(resp.data); 
-    } catch (error) {
-        alert(error);
-    }
-}
-
-</script>
+<div>
+    Test calling an Azure Function.
+</div>
 
 <button onclick="doSubmit()" type="button" class="btn btn-primary">Test It</button>
 
 <div>
     <span id="sigField"></span>
 </div>
+
+<script type="text/javascript">
+
+    // move to view model
+    var signature = {
+        result: "not set",
+    };
+    
+    function doSubmit() {
+    
+        axios({
+            method: "get",
+            url: 'https://services.raydreams.com/api/v1/ping?msg=test'})
+            .then(callback);
+    }
+    
+    // 
+    function callback(resp) {
+    
+        try {
+            signature = resp.data;
+            var ctrl = document.getElementById('sigField');
+            ctrl.innerHTML = resp.data.result;
+            //alert(resp.data); 
+        } catch (error) {
+            alert(error);
+        }
+    }
+    
+</script>
