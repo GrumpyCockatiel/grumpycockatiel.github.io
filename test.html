@@ -29,11 +29,11 @@ function callback(resp) {
 
     var result = resp.data.result;
     Alpine.data('myObj').setIt(result);
-    //alert(Alpine.data('myObj').msg);
+    alert(Alpine.data('myObj').msg);
 }
 
 </script>
 
 <div x-data="myObj">
-    <span x-bind:myObj="msg"></span>
+    <span x-text="msg"></span>
 </div>
