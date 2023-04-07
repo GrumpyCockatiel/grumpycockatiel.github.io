@@ -23,10 +23,10 @@ function doSubmit() {
 function callback(resp) {
 
     try {
-        signature = resp.data
+        signature =  JSON.parse(resp.data);
         var ctrl = document.getElementById('sigField');
         ctrl.innerHTML = signature.result;
-        //alert(Alpine.data('myObj').msg); 
+        alert(resp.data); 
     } catch (error) {
         alert(error);
     }
