@@ -7,10 +7,6 @@ title: Test
 
 <button onclick="doSubmit()" type="button">Click me</button>
 
-<script>
-
-</script>
-
 <script type="text/javascript">
 
 document.addEventListener('alpine:init', () => {
@@ -30,11 +26,12 @@ function doSubmit() {
 function callback(resp) {
 
     var result = resp.data.result;
-    alert(result);
+    Alpine.data('myObj').msg = result;
+    //alert(result);
 }
 
 </script>
 
 <div x-data="myObj">
-    <span x-text="msg"></span>
+    <span x-bind="msg"></span>
 </div>
