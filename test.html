@@ -25,7 +25,7 @@ function callback(resp) {
     try {
         //signature = JSON.parse(resp.data);
         var ctrl = document.getElementById('sigField');
-        ctrl.innerHTML = resp.data;
+        ctrl.innerHTML = resp.data.result;
         alert(resp.data); 
     } catch (error) {
         alert(error);
