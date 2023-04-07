@@ -4,3 +4,25 @@ title: Test
 ---
 
 <h2>Test HTML Post Page</h2>
+
+<button onclick="doSubmit()" type="button">Click me</button>
+
+<script type="text/javascript">
+/* send the color to the backend */
+function doSubmit() {
+
+    axios({
+        method: "get",
+        url: 'https://services.raydreams.com/api/v1/ping?msg=test'}).then(callback)
+        .catch(function (error) {
+            jQuery("#fileUploader").val('');
+        });
+}
+
+function callback(resp) {
+
+    var result = resp.data;
+    alert(result);
+}
+
+</script>
