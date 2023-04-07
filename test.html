@@ -12,7 +12,7 @@ title: Test
 document.addEventListener('alpine:init', () => {
         Alpine.data('myObj', () => ({
             msg: 'nothing yet',
-            setIt(msg) { self.msg = msg; }
+            setIt(m) { self.msg = m; }
         }))
     })
 
@@ -27,9 +27,13 @@ function doSubmit() {
 // 
 function callback(resp) {
 
-    var result = resp.data.result;
-    Alpine.data('myObj').setIt(result);
-    alert(Alpine.data('myObj').msg);
+    try {
+        var result = resp.data.result;
+        Alpine.data('myObj').setIt(result);
+        alert(Alpine.data('myObj').msg); 
+    } catch (error) {
+        alert(error);
+    }
 }
 
 </script>
