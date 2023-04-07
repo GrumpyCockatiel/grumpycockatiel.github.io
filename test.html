@@ -26,12 +26,12 @@ function doSubmit() {
 function callback(resp) {
 
     var result = resp.data.result;
-    Alpine.data('myObj').msg = result;
-    //alert(result);
+    //Alpine.data('myObj').msg = result;
+    alert(Alpine.data('myObj').msg);
 }
 
 </script>
 
 <div x-data="myObj">
-    <span x-bind="msg"></span>
+    <span x-data="msg"></span>
 </div>
