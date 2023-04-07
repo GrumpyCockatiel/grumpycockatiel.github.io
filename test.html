@@ -11,7 +11,7 @@ title: Test
 
 document.addEventListener('alpine:init', () => {
         Alpine.data('myObj', () => ({
-            msg: 'Init',
+            msg: 'nothing yet',
             setIt(msg) { self.msg = msg; }
         }))
     })
@@ -24,16 +24,16 @@ function doSubmit() {
         .then(callback);
 }
 
+// 
 function callback(resp) {
 
     var result = resp.data.result;
     Alpine.data('myObj').setIt(result);
     //alert(Alpine.data('myObj').msg);
-
 }
 
 </script>
 
 <div x-data="myObj">
-    <span x-text="msg"></span>
+    <span x-bind:myObj="msg"></span>
 </div>
