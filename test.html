@@ -7,14 +7,9 @@ title: Test
 
 <script type="text/javascript">
 
-var signature = { msg:'init' };
-
-document.addEventListener('alpine:init', () => {
-        Alpine.data('myObj', () => ({
-            msg: 'nothing yet',
-            set msg(m) { self.msg = m; }
-        }))
-    })
+var signature = {
+    result: "not set",
+};
 
 function doSubmit() {
 
@@ -28,9 +23,9 @@ function doSubmit() {
 function callback(resp) {
 
     try {
-        var result = resp.data.result;
-        //Alpine.data('myObj').setIt(result);
-        signature.msg = result;
+        signature = resp.data
+        var ctrl = document.getElementById('sigField');
+        ctrl.innerHTML = signature.result;
         //alert(Alpine.data('myObj').msg); 
     } catch (error) {
         alert(error);
@@ -41,6 +36,6 @@ function callback(resp) {
 
 <button onclick="doSubmit()" type="button" class="btn btn-primary">Test It</button>
 
-<div x-data="signature">
-    <span x-text="msg"></span>
+<div>
+    <span id="sigField"></span>
 </div>
