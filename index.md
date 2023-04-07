@@ -11,6 +11,8 @@ It uses [axios.js](https://axios-http.com/) to talk to the backend.
 
 It **DOES NOT** use node.js!
 
+It **DOES NOT** use any Javascript framework - just vanilla.js!
+
 ## Site Pages
 
 <ol class="list-group list-group-numbered">
