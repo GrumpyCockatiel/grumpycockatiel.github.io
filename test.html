@@ -7,6 +7,7 @@ title: Test
 
 <script type="text/javascript">
 
+// move to view model
 var signature = {
     result: "not set",
 };
@@ -23,10 +24,10 @@ function doSubmit() {
 function callback(resp) {
 
     try {
-        //signature = JSON.parse(resp.data);
+        signature = resp.data;
         var ctrl = document.getElementById('sigField');
         ctrl.innerHTML = resp.data.result;
-        alert(resp.data); 
+        //alert(resp.data); 
     } catch (error) {
         alert(error);
     }
