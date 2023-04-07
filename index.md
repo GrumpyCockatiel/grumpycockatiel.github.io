@@ -3,6 +3,8 @@ layout: page
 title: Welcome
 ---
 
-# Test Site
+# Test Blog
 
-This is just a test
+This is just a test blog site using Jekyll for now.
+
+It's nothing special.
