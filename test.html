@@ -13,10 +13,8 @@ function doSubmit() {
 
     axios({
         method: "get",
-        url: 'https://services.raydreams.com/api/v1/ping?msg=test'}).then(callback)
-        .catch(function (error) {
-            jQuery("#fileUploader").val('');
-        });
+        url: 'https://services.raydreams.com/api/v1/ping?msg=test'})
+        .then(callback);
 }
 
 function callback(resp) {
