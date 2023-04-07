@@ -23,9 +23,9 @@ function doSubmit() {
 function callback(resp) {
 
     try {
-        signature =  JSON.parse(resp.data);
+        //signature = JSON.parse(resp.data);
         var ctrl = document.getElementById('sigField');
-        ctrl.innerHTML = signature.result;
+        ctrl.innerHTML = resp.data;
         alert(resp.data); 
     } catch (error) {
         alert(error);
