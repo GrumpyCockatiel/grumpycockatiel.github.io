@@ -9,12 +9,12 @@ title: Test
 
 <script type="text/javascript">
 
-var signature = '';
+var signature = { msg:'init' };
 
 document.addEventListener('alpine:init', () => {
         Alpine.data('myObj', () => ({
             msg: 'nothing yet',
-            setIt: function(m) { self.msg = m; }
+            set msg(m) { self.msg = m; }
         }))
     })
 
@@ -31,9 +31,9 @@ function callback(resp) {
 
     try {
         var result = resp.data.result;
-        Alpine.data('myObj').setIt(result);
-        signature = result;
-        alert(Alpine.data('myObj').msg); 
+        //Alpine.data('myObj').setIt(result);
+        signature.msg = result;
+        //alert(Alpine.data('myObj').msg); 
     } catch (error) {
         alert(error);
     }
@@ -41,6 +41,6 @@ function callback(resp) {
 
 </script>
 
-<div x-data="myObj">
+<div x-data="signature">
     <span x-text="msg"></span>
 </div>
