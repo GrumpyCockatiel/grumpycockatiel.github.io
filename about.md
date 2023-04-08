@@ -22,7 +22,7 @@ My goal is to help clients actually deliver a product - a done product - a compl
 
 ### This Site
     
-This site is 100% custom built by me using C#, Blazor, Bootstrap, and Azure. No WordPress or SquareSpace was involved. I actually created a simple Blogging App called [MicroCMS](https://github.com/GrumpyCockatiel/Raydreams.MicroCMS)
+This site is 100% custom built by me using vanilla.js, Jekyll, C#/.NET, MongoDB, Azure Functions and Azure Data Storage . No WordPress or SquareSpace was involved.
 
 ### My Desk
 
