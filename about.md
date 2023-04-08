@@ -10,7 +10,6 @@ You know those B&amp;W headshot photos of the C-Suite on most every company site
 ### Why Did I Start My Own Software Consulting
 
 ![headshot](/assets/images/headshot.jpg){: .aboutImage }
-
 I've been doing software development full-time for 24 years now. And while I've touched a variety of languages, frameworks and stacks, now that .NET Core is truely cross-platform, it's where I spend most of my time. I'm one of those confused developers who actually does .NET devlopment on a Mac (and yes, I can still use Windows).
 
 After having been interviewed over 100 times my career as well as interviewing at least 100 people myself, I realized that all those academic questions during hours of inhumane interviews like "What does the 'L' mean in the SOLID Principal?", "Can you tell me the difference between MVC, MVP, and MVVM?" or "What's the autocomplexity of searching a red-black tree?" were not a predictor of a prolific or passionate programmer, simply the foundation to become one.
