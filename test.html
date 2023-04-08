@@ -19,7 +19,7 @@ title: Random Quote
 <script type="text/javascript">
 
     // move to view model
-    var quote = {
+    var vm = {
         quote: "not set",
         author: "anonymous"
     };
@@ -36,9 +36,9 @@ title: Random Quote
     function callback(resp) {
     
         try {
-            quote = resp.data;
+            vm = resp.data;
             var ctrl1 = document.getElementById('quoteField');
-            ctrl1.innerHTML = resp.data.quote;
+            ctrl1.innerHTML = vm.quote;
             //alert(resp.data); 
         } catch (error) {
             alert(error);
