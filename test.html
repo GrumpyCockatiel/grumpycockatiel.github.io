@@ -6,7 +6,7 @@ title: Random Quote
 <h2>Test HTML Post Page</h2>
 
 <div>
-    Test calling an Azure Function.
+    Click to pull a random quote from an Azure Function.
 </div>
 
 <button onclick="doSubmit()" type="button" class="btn btn-primary">Test It</button>
@@ -36,7 +36,11 @@ title: Random Quote
     function callback(resp) {
     
         try {
-            vm = resp.data;
+
+            if ( !resp.data.isSuccess )
+                return;
+
+            vm = resp.data.result;
             var ctrl1 = document.getElementById('quoteField');
             ctrl1.innerHTML = vm.quote;
             //alert(resp.data); 
@@ -44,5 +48,5 @@ title: Random Quote
             alert(error);
         }
     }
-    
+
 </script>
