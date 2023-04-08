@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Test
+title: Random Quote
 ---
 
 <h2>Test HTML Post Page</h2>
@@ -12,21 +12,23 @@ title: Test
 <button onclick="doSubmit()" type="button" class="btn btn-primary">Test It</button>
 
 <div>
-    <span id="sigField"></span>
+    <span id="quoteField"></span>
+    <span id="authorField"></span>
 </div>
 
 <script type="text/javascript">
 
     // move to view model
-    var signature = {
-        result: "not set",
+    var quote = {
+        quote: "not set",
+        author: "anonymous"
     };
     
     function doSubmit() {
     
         axios({
             method: "get",
-            url: 'https://services.raydreams.com/api/v1/ping?msg=test'})
+            url: 'https://services.raydreams.com/api/v1/quote'})
             .then(callback);
     }
     
@@ -34,9 +36,9 @@ title: Test
     function callback(resp) {
     
         try {
-            signature = resp.data;
-            var ctrl = document.getElementById('sigField');
-            ctrl.innerHTML = resp.data.result;
+            quote = resp.data;
+            var ctrl1 = document.getElementById('quoteField');
+            ctrl1.innerHTML = resp.data.quote;
             //alert(resp.data); 
         } catch (error) {
             alert(error);
